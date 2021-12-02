@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Player overall prediction app</title>
+</head>
+<body>
+	<div class = "login">
+		<h1> Predict overall score</h1>
+
+	<form action ="{{url_for('predict')}}"method="post">
+		<input type='number'name="movement_reaction" placeholder="movement_reaction" required="required"/>
+		<br>
+		<input type='number'name="mentality_ composure" placeholder="mentality_composure" required="required"/>
+		<br>
+		<input type='number'name="power_shot_power" placeholder="power_shot_power" required="required"/>
+		<br>
+		<input type='number'name="gk_reflexes" placeholder="gk_reflexes" required="required"/>
+		<br>
+		<input type='number'name="passing" placeholder="passing" required="required"/>
+		<br>
+		<input type='number'name="value_eur" placeholder="value_eur" required="required"/>
+		<br>
+		<input type='number'name="gk_handling" placeholder="gk_handling" required="required"/>
+		<br>
+		<input type='number'name="gk_positioning" placeholder="gk_positioning" required="required"/>
+		<br>
+		<input type='number'name="wage_eur" placeholder="wage_eur" required="required"/>
+		<br>
+		<input type='number'name="gk_diving" placeholder="gk_diving" required="required"/>
+		<br>
+		<input type='number'name="potential" placeholder="potential" required="required"/>
+		<br>
+		<input type='number'name="dribbling" placeholder="dribbling" required="required"/>
+		<br>
+		<input type='number'name="gk_kicking" placeholder="gk_kicking" required="required"/>
+		<br>
+		
+
+	<button type ="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+
+<br>
+<br>
+{{ prediction_text}}
+
+</div>
+		
+
+
+
+</body>
+</html>
